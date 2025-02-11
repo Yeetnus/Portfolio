@@ -7,26 +7,26 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="source.css">
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+<body class="bg-gray-900 text-gray-100 transition-colors">
 
 <!-- Navbar -->
-<nav class="p-5 bg-white dark:bg-gray-800 shadow-md flex justify-between border-b-4 border-yellow-500 dark:border-red-500">
-    <h1 class="text-xl font-bold text-red-600 dark:text-yellow-400">Mon Portfolio</h1>
-    <ul class="flex space-x-4">
-        <li><a href="#about" class="text-gray-900 dark:text-gray-100">À Propos</a></li>
-        <li><a href="#home" class="text-gray-900 dark:text-gray-100">Accueil</a></li>
-        <li><a href="#skills" class="text-gray-900 dark:text-gray-100">Compétences</a></li>
-        <li><a href="#projects" class="text-gray-900 dark:text-gray-100">Projets</a></li>
+<nav class="p-5 bg-black shadow-md flex justify-center items-center w-full fixed top-0 left-0 z-10 border-b-4 border-green-500">
+    <ul class="flex space-x-8">
+        <li><a href="#about" class="text-green-500 font-bold ">À Propos</a></li>
+        <li><a href="#home" class="text-green-500 font-bold ">Accueil</a></li>
+        <li><a href="#skills" class="text-green-500 font-bold ">Compétences</a></li>
+        <li><a href="#projects" class="text-green-500 font-bold ">Projets</a></li>
+        <li><a href="#contact" class="text-green-500 font-bold ">Contact</a></li> <!-- Ajout de la section Contact -->
     </ul>
-    <button id="toggleTheme" class="px-4 py-2 bg-blue-500 text-white rounded">Mode sombre</button>
 </nav>
+
 
 <!-- Section Présentation -->
 <section id="about" class="py-32 px-10 text-center">
-    <h2 class="text-3xl font-bold text-yellow-500 dark:text-red-400">Yanis Croguennoc</h2>
+    <h2 class="text-3xl font-bold text-red-500">Yanis Croguennoc</h2>
     <div class="mt-10 flex flex-col items-center">
         <img src="pdp.jpg" alt="Photo de profil" class="w-48 h-48 object-cover rounded-full shadow-lg mb-6">
-        <p class="text-lg text-gray-700 dark:text-gray-300 max-w-2xl">
+        <p class="text-lg text-gray-300 max-w-2xl">
             Je suis un développeur web passionné par les nouvelles technologies et l'innovation.
             Fort d'une expérience en développement front-end et back-end, je m'efforce de créer des applications performantes et intuitives.
         </p>
@@ -35,106 +35,166 @@
 
 <!-- Section Accueil -->
 <section id="home" class="text-center py-20">
-    <h2 class="text-4xl font-bold text-yellow-500 dark:text-red-400">Bienvenue sur mon Portfolio</h2>
+    <h2 class="text-4xl font-bold text-red-500">Bienvenue sur mon Portfolio</h2>
     <p class="mt-4 text-lg">Développeur Web - Passionné par les technologies modernes</p>
 </section>
 
-<!-- Section Compétences -->
-<section id="skills" class="py-20 px-10">
-    <h2 class="text-3xl font-bold text-center text-red-600 dark:text-yellow-400">Évolution des Compétences</h2>
-    <p class="text-center mt-4 text-lg">Analyse de ma progression depuis le BUT 1 jusqu'à aujourd'hui.</p>
-    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-bold text-yellow-500 dark:text-red-400">HTML & CSS</h3>
-            <p class="mt-2 text-gray-700 dark:text-gray-300">Maitrise avancée de la structuration et du style des pages web.</p>
+<!-- Section Langages et Technologies Maîtrisées -->
+<section id="languages-tech" class="py-20 px-10 text-center bg-gray-800">
+    <h2 class="text-3xl font-bold text-green-500">Langages et Technologies Maîtrisées</h2>
+    <div class="mt-8 flex justify-center space-x-10">
+        <div class="w-1/2 text-left">
+            <h3 class="text-xl font-semibold text-green-500">Langages</h3>
+            <ul class="mt-4 space-y-6">
+                <li class="flex items-center space-x-4">
+                    <img src="html-css-logo.png" alt="HTML5 & CSS3" class="w-8 h-8">
+                    <span class="text-lg text-gray-300">HTML5 & CSS3</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                    <img src="javascript-logo.png" alt="JavaScript" class="w-8 h-8">
+                    <span class="text-lg text-gray-300">JavaScript</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                    <img src="typescript-logo.png" alt="TypeScript" class="w-8 h-8">
+                    <span class="text-lg text-gray-300">TypeScript</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                    <img src="python-logo.png" alt="Python" class="w-8 h-8">
+                    <span class="text-lg text-gray-300">Python</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                    <img src="php-logo.png" alt="PHP" class="w-8 h-8">
+                    <span class="text-lg text-gray-300">PHP</span>
+                </li>
+            </ul>
         </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-bold text-yellow-500 dark:text-red-400">JavaScript</h3>
-            <p class="mt-2 text-gray-700 dark:text-gray-300">Développement interactif et dynamique avec des frameworks modernes.</p>
+
+        <!-- Séparateur Vertical -->
+        <div class="flex items-center justify-center">
+            <div class="h-full border-l-4 border-gray-600"></div>
         </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-bold text-yellow-500 dark:text-red-400">React.js</h3>
-            <p class="mt-2 text-gray-700 dark:text-gray-300">Création d'interfaces utilisateur réactives et performantes.</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-bold text-yellow-500 dark:text-red-400">Node.js & Express</h3>
-            <p class="mt-2 text-gray-700 dark:text-gray-300">Développement backend avec API RESTful.</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-bold text-yellow-500 dark:text-red-400">Bases de données</h3>
-            <p class="mt-2 text-gray-700 dark:text-gray-300">Gestion avec MySQL et MongoDB.</p>
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <h3 class="text-xl font-bold text-yellow-500 dark:text-red-400">Git & GitHub</h3>
-            <p class="mt-2 text-gray-700 dark:text-gray-300">Versionnement et collaboration efficace.</p>
+
+        <div class="w-1/2 text-left">
+            <h3 class="text-xl font-semibold text-green-500">Technologies</h3>
+            <ul class="mt-4 space-y-6">
+                <li class="flex items-center space-x-4">
+                    <img src="react-logo.png" alt="React.js" class="w-8 h-8">
+                    <span class="text-lg text-gray-300">React.js</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                    <img src="nodejs-logo.png" alt="Node.js & Express" class="w-8 h-8">
+                    <span class="text-lg text-gray-300">Node.js & Express</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                    <img src="vuejs-logo.png" alt="Vue.js" class="w-8 h-8">
+                    <span class="text-lg text-gray-300">Vue.js</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                    <img src="mongodb-logo.png" alt="MongoDB & MySQL" class="w-8 h-8">
+                    <span class="text-lg text-gray-300">MongoDB & MySQL</span>
+                </li>
+                <li class="flex items-center space-x-4">
+                    <img src="docker-logo.png" alt="Docker" class="w-8 h-8">
+                    <span class="text-lg text-gray-300">Docker</span>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
 
 <!-- Section Projets sous forme de liste à puces -->
 <section id="projects" class="py-20 px-10 text-center">
-    <h2 class="text-3xl font-bold text-red-600 dark:text-yellow-400">Mes Projets</h2>
+    <h2 class="text-3xl font-bold text-green-500">Mes Projets</h2>
     <div class="mt-10 space-y-6">
-        <div class="flex items-center space-x-6 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <div class="project-bubble bg-yellow-500 dark:bg-red-400 text-white text-xl font-bold p-4 rounded-full">Projet 1</div>
+        <div class="flex items-center space-x-6 bg-black p-6 rounded-lg shadow-md">
+            <div class="project-bubble bg-green-500 text-white text-xl font-bold p-4 rounded-full">Projet 1</div>
             <img src="project1.jpg" alt="Projet 1" class="w-32 h-32 object-cover rounded-lg">
-            <p class="text-gray-700 dark:text-gray-300">Description du projet 1 avec ses objectifs et technologies utilisées.</p>
+            <p class="text-gray-300">Description du projet 1 avec ses objectifs et technologies utilisées.</p>
         </div>
-        <div class="flex items-center space-x-6 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <div class="project-bubble bg-green-400 dark:bg-blue-500 text-white text-xl font-bold p-4 rounded-full">Projet 2</div>
+        <div class="flex items-center space-x-6 bg-black p-6 rounded-lg shadow-md">
+            <div class="project-bubble bg-red-500 text-white text-xl font-bold p-4 rounded-full">Projet 2</div>
             <img src="project2.jpg" alt="Projet 2" class="w-32 h-32 object-cover rounded-lg">
-            <p class="text-gray-700 dark:text-gray-300">Description du projet 2 et son impact sur mon apprentissage.</p>
+            <p class="text-gray-300">Description du projet 2 et son impact sur mon apprentissage.</p>
         </div>
-        <div class="flex items-center space-x-6 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-            <div class="project-bubble bg-purple-400 dark:bg-pink-500 text-white text-xl font-bold p-4 rounded-full">Projet 3</div>
+        <div class="flex items-center space-x-6 bg-black p-6 rounded-lg shadow-md">
+            <div class="project-bubble bg-purple-500 text-white text-xl font-bold p-4 rounded-full">Projet 3</div>
             <img src="project3.jpg" alt="Projet 3" class="w-32 h-32 object-cover rounded-lg">
-            <p class="text-gray-700 dark:text-gray-300">Description du projet 3, ses défis et apprentissages clés.</p>
+            <p class="text-gray-300">Description du projet 3, ses défis et apprentissages clés.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Section Compétences -->
+<section id="skills" class="py-20 px-10">
+    <h2 class="text-3xl font-bold text-center text-green-500">Évolution des Compétences</h2>
+    <p class="text-center mt-4 text-lg">Analyse de ma progression depuis le BUT 1 jusqu'à aujourd'hui.</p>
+    <div class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-black p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-green-500">HTML & CSS</h3>
+            <p class="mt-2 text-gray-300">Maitrise avancée de la structuration et du style des pages web.</p>
+        </div>
+        <div class="bg-black p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-green-500">JavaScript</h3>
+            <p class="mt-2 text-gray-300">Développement interactif et dynamique avec des frameworks modernes.</p>
+        </div>
+        <div class="bg-black p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-green-500">React.js</h3>
+            <p class="mt-2 text-gray-300">Création d'interfaces utilisateur réactives et performantes.</p>
+        </div>
+        <div class="bg-black p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-green-500">Node.js & Express</h3>
+            <p class="mt-2 text-gray-300">Développement backend avec API RESTful.</p>
+        </div>
+        <div class="bg-black p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-green-500">Bases de données</h3>
+            <p class="mt-2 text-gray-300">Gestion avec MySQL et MongoDB.</p>
+        </div>
+        <div class="bg-black p-6 rounded-lg shadow-md">
+            <h3 class="text-xl font-bold text-green-500">Git & GitHub</h3>
+            <p class="mt-2 text-gray-300">Versionnement et collaboration efficace.</p>
         </div>
     </div>
 </section>
 
 <!-- Section CV -->
-<section id="cv" class="py-20 px-10 text-center bg-gray-100 dark:bg-gray-800">
-    <h2 class="text-3xl font-bold text-red-600 dark:text-yellow-400">Mon CV</h2>
-    <p class="text-lg mt-4 text-gray-700 dark:text-gray-300">Téléchargez mon CV pour en savoir plus sur mon parcours et mes compétences.</p>
+<section id="cv" class="py-20 px-10 text-center bg-gray-900">
+    <h2 class="text-3xl font-bold text-green-500">Mon CV</h2>
+    <p class="text-lg mt-4 text-gray-300">Téléchargez mon CV pour en savoir plus sur mon parcours et mes compétences.</p>
 
-    <a href="cv.pdf" download class="mt-6 inline-block py-3 px-6 bg-yellow-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 dark:bg-red-400 dark:hover:bg-red-500">
+    <a href="cv.pdf" download class="mt-6 inline-block py-3 px-6 bg-green-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-400">
         Télécharger mon CV
     </a>
 
-    <p class="mt-6 text-lg text-gray-700 dark:text-gray-300">Vous pouvez également consulter mon travail sur GitHub.</p>
-    <a href="https://github.com/Yeetnus" target="_blank" class="mt-3 inline-block py-3 px-6 bg-gray-800 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 dark:bg-gray-600 dark:hover:bg-gray-500">
+    <p class="mt-6 text-lg text-gray-300">Vous pouvez également consulter mon travail sur GitHub.</p>
+    <a href="https://github.com/Yeetnus" target="_blank" class="mt-3 inline-block py-3 px-6 bg-black text-white text-lg font-semibold rounded-lg shadow-md hover:bg-gray-800">
         Mon GitHub
     </a>
 </section>
 
-
-
 <!-- Section Contact -->
-<section id="contact" class="py-20 px-10 bg-white dark:bg-gray-800">
-    <h2 class="text-3xl font-bold text-center text-red-600 dark:text-yellow-400">Contactez-moi</h2>
-    <p class="text-center mt-4 text-lg text-gray-700 dark:text-gray-300">N'hésitez pas à me contacter pour toute question ou collaboration !</p>
+<section id="contact" class="py-20 px-10 bg-black">
+    <h2 class="text-3xl font-bold text-center text-green-500">Contactez-moi</h2>
+    <p class="text-center mt-4 text-lg text-gray-300">N'hésitez pas à me contacter pour toute question ou collaboration !</p>
 
     <form action="https://formspree.io/f/xvgzbrgg" method="POST" class="max-w-xl mx-auto mt-10 space-y-6">
         <div>
-            <label for="name" class="block text-lg font-medium text-gray-700 dark:text-gray-300">Nom</label>
-            <input type="text" id="name" name="name" required class="mt-2 p-3 w-full border border-gray-300 rounded-lg bg-gray-100 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            <label for="name" class="block text-lg font-medium text-gray-300">Nom</label>
+            <input type="text" id="name" name="name" required class="mt-2 p-3 w-full border border-gray-600 rounded-lg bg-gray-800 text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500">
         </div>
 
         <div>
-            <label for="email" class="block text-lg font-medium text-gray-700 dark:text-gray-300">Email</label>
-            <input type="email" id="email" name="email" required class="mt-2 p-3 w-full border border-gray-300 rounded-lg bg-gray-100 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            <label for="email" class="block text-lg font-medium text-gray-300">Email</label>
+            <input type="email" id="email" name="email" required class="mt-2 p-3 w-full border border-gray-600 rounded-lg bg-gray-800 text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500">
         </div>
 
         <div>
-            <label for="message" class="block text-lg font-medium text-gray-700 dark:text-gray-300">Message</label>
-            <textarea id="message" name="message" rows="5" required class="mt-2 p-3 w-full border border-gray-300 rounded-lg bg-gray-100 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+            <label for="message" class="block text-lg font-medium text-gray-300">Message</label>
+            <textarea id="message" name="message" rows="5" required class="mt-2 p-3 w-full border border-gray-600 rounded-lg bg-gray-800 text-gray-100 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
         </div>
 
-        <button type="submit" class="w-full py-3 mt-6 bg-yellow-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-yellow-500 dark:bg-red-400 dark:hover:bg-red-500">Envoyer</button>
+        <button type="submit" class="w-full py-3 mt-6 bg-green-500 text-white text-lg font-semibold rounded-lg shadow-md hover:bg-green-400">Envoyer</button>
     </form>
 </section>
-
 
 <script src="script.js"></script>
 </body>
